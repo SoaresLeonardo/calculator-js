@@ -17,17 +17,16 @@ button {
   width: 60px;
   margin-right: 5px;
   height: 60px;
-  background-color: #34313d;
-  box-shadow: 5px 5px 5px #00000036;
+  box-shadow: 3px 3px 3px #00000036;
   color: #fff;
-  font-size: 1.3rem;
-  transition: 0.2s;
+  font-size: 1.5rem;
+  outline: none;
+  cursor: pointer;
 }
 
-button:hover:not(.method, .equal) {
-    background-color: #0000000e;
+button:not(.method) {
+  background-image: linear-gradient(to top, #33313d, #2c2a36);
 }
-
 
 body {
   background-color: var(--backgroundColor);
@@ -35,28 +34,23 @@ body {
 
 .calculator-container {
   background-color: var(--backgroundCalculatorContainer);
-  max-width: 320px;
+  max-width: 340px;
   margin: 50px auto;
-  padding: 25px;
+  padding: 38px;
   border-radius: 35px;
   box-shadow: 3px 3px 20px #00000056;
 }
 
 .method {
-  background-color: #6a44af;
+  background-color: #472a75;
 }
 
 .ce {
   color: #844ed8;
 }
 
-
 .equal {
-  background-color: #844ed8;    
-}
-
-.method:hover {
-    background-color: #57398fc9;
+  background-color: #844fe1;
 }
 
 .header-container {
@@ -70,10 +64,12 @@ body {
 }
 
 .display {
-  color: white;
   font-size: 2rem;
   text-align: right;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-top: 40px;
+  width: 100%;
+  background: none;
+  border-style: none;
+  color: white;
 }
-
